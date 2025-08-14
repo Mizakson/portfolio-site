@@ -1,0 +1,57 @@
+:root {
+    font-family: "Archivo", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+body {
+    padding: 5%;
+}
+
+header {
+    min-height: 800px;
+    min-width: auto;
+}
+
+.title-container>h1 {
+    font-size: 144px;
+}
+
+.title-desc>p {
+    font-size: 30px;
+    font-weight: 100;
+}
+
+.title-desc {
+    display: flex;
+    gap: 5%;
+}
+
+.nav-bar {
+    position: fixed;
+    right: 0;
+    padding-right: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+}
+
+.nav-bar>a {
+    font-size: 30px;
+}
+
+.header-socials {
+    display: flex;
+    gap: 10%;
+    align-items: center;
+}
+
+.section-title {
+    font-style: italic;
+    font-size: 72px;
+}
+
+.section-line {
+    max-width: 720px;
+    border: 2px solid black;
+}
