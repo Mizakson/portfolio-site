@@ -8,13 +8,31 @@ body {
     padding: 5%;
 }
 
-header {
+main,
+header,
+section {
     min-height: 800px;
-    min-width: auto;
+    max-width: 720px;
+}
+
+.title-container,
+#about-me {
+    transition: background-color .4s ease-out, color .4s ease-out;
 }
 
 .title-container>h1 {
     font-size: 144px;
+}
+
+.title-container:hover,
+#about-me:hover {
+    color: white;
+    background-color: black;
+
+    .header-socials {
+        transition: filter .4s ease-out;
+        filter: invert(1) hue-rotate(180deg);
+    }
 }
 
 .title-desc>p {
@@ -53,12 +71,11 @@ header {
 
 .header-socials {
     display: flex;
-    gap: 10%;
+    gap: 25%;
     align-items: center;
 }
 
 .section-title {
-    font-style: italic;
     font-size: 72px;
 }
 
