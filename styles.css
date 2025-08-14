@@ -13,6 +13,11 @@ header,
 section {
     min-height: 800px;
     max-width: 720px;
+    text-wrap: pretty;
+}
+
+header {
+    min-height: 800px;
 }
 
 .title-container,
@@ -22,6 +27,7 @@ section {
 
 .title-container>h1 {
     font-size: 144px;
+    margin-left: 2.5%;
 }
 
 .title-container:hover,
@@ -37,7 +43,8 @@ section {
 
 .title-desc>p {
     font-size: 30px;
-    font-weight: 100;
+    font-weight: 200;
+    margin-left: 2.5%;
 }
 
 .title-desc {
@@ -55,12 +62,13 @@ section {
 }
 
 .nav-bar>a {
-    font-size: 30px;
+    font-size: 44px;
     text-transform: none;
     text-decoration: none;
     color: inherit;
     transition: background-color .4s ease-in-out, color 0.4s ease-out, transform 0.4s ease-out;
-    width: 240px;
+    width: 320px;
+    padding-left: 2.5%;
 }
 
 .nav-bar>a:hover {
@@ -77,9 +85,19 @@ section {
 
 .section-title {
     font-size: 72px;
+    margin-left: 2.5%;
+    padding-top: 2.5%;
 }
 
 .section-line {
     max-width: 720px;
     border: 2px solid black;
+}
+
+.about-text {
+    margin-left: 2.5%;
+    max-width: 620px;
+    padding-bottom: 2.5%;
+    font-weight: 200;
+    font-size: 24px;
 }
