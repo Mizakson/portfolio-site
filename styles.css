@@ -23,7 +23,8 @@ header {
 .title-container,
 #about-me,
 #self-taught,
-#skills {
+#skills,
+.project-card {
     transition: background-color .4s ease-out, color .4s ease-out;
 }
 
@@ -35,7 +36,8 @@ header {
 .title-container:hover,
 #about-me:hover,
 #self-taught:hover,
-#skills:hover {
+#skills:hover,
+.project-card:hover {
     color: white;
     background-color: black;
 
@@ -104,6 +106,7 @@ header {
     padding-bottom: 2.5%;
     font-weight: 200;
     font-size: 24px;
+    text-wrap: pretty;
 }
 
 .list-title {
@@ -121,4 +124,42 @@ header {
 .familiar-with {
     display: grid;
     grid-template-rows: 100px 200px;
+}
+
+.project-title,
+.project-links>a {
+    padding-left: 2.5%;
+}
+
+.project-bullets>.about-text {
+    font-size: 18px;
+}
+
+.project-text>.project-title {
+    font-size: 24px;
+}
+
+.project-links>a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 18px;
+}
+
+.project-card {
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+}
+
+.project-container {
+    display: grid;
+    grid-template-rows: repeat(1fr, 4);
+}
+
+#projects {
+    min-height: auto;
+}
+
+.tech-stack {
+    padding-left: 2.5%;
+    font-weight: 300;
 }
