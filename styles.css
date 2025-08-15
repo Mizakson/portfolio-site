@@ -21,7 +21,9 @@ header {
 }
 
 .title-container,
-#about-me {
+#about-me,
+#self-taught,
+#skills {
     transition: background-color .4s ease-out, color .4s ease-out;
 }
 
@@ -31,7 +33,9 @@ header {
 }
 
 .title-container:hover,
-#about-me:hover {
+#about-me:hover,
+#self-taught:hover,
+#skills:hover {
     color: white;
     background-color: black;
 
@@ -100,4 +104,21 @@ header {
     padding-bottom: 2.5%;
     font-weight: 200;
     font-size: 24px;
+}
+
+.list-title {
+    font-size: 30px;
+}
+
+.bullets-container {
+    display: flex;
+    align-items: center;
+    gap: 15%;
+    padding-left: 2.5%;
+}
+
+.proficient-in,
+.familiar-with {
+    display: grid;
+    grid-template-rows: 100px 200px;
 }
