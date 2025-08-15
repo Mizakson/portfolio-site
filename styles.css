@@ -24,7 +24,8 @@ header {
 #about-me,
 #self-taught,
 #skills,
-.project-card {
+.project-card,
+#contact-me {
     transition: background-color .4s ease-out, color .4s ease-out;
 }
 
@@ -37,11 +38,12 @@ header {
 #about-me:hover,
 #self-taught:hover,
 #skills:hover,
-.project-card:hover {
+.project-card:hover,
+#contact-me:hover {
     color: white;
     background-color: black;
 
-    .header-socials {
+    .socials {
         transition: filter .4s ease-out;
         filter: invert(1) hue-rotate(180deg);
     }
@@ -68,7 +70,7 @@ header {
 }
 
 .nav-bar>a {
-    font-size: 44px;
+    font-size: 36px;
     text-transform: none;
     text-decoration: none;
     color: inherit;
@@ -83,7 +85,7 @@ header {
     background-color: black;
 }
 
-.header-socials {
+.socials {
     display: flex;
     gap: 25%;
     align-items: center;
@@ -147,12 +149,13 @@ header {
 
 .project-card {
     padding-top: 1.5%;
-    padding-bottom: 1.5%;
+    padding-bottom: 3.5%;
 }
 
 .project-container {
     display: grid;
     grid-template-rows: repeat(1fr, 4);
+
 }
 
 #projects {
@@ -162,4 +165,9 @@ header {
 .tech-stack {
     padding-left: 2.5%;
     font-weight: 300;
+}
+
+#contact-me>.socials {
+    gap: 2.5%;
+    padding-left: 2.5%;
 }
