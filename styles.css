@@ -172,6 +172,24 @@ header {
     padding-left: 2.5%;
 }
 
-@media (min-width: 600px) and (max-width: 1199px) {}
+@media (min-width: 899px) and (max-width: 1199px) {
 
-@media (max-width: 599px) {}
+    main,
+    header,
+    section {
+        max-width: 480px;
+        width: 100%;
+    }
+
+    .nav-bar>a {
+        font-size: 36px;
+    }
+
+    .title-container>h1 {
+        font-size: 96px;
+    }
+
+    .nav-bar {
+        padding-right: 2.5%;
+    }
+}
