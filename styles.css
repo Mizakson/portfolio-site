@@ -95,11 +95,12 @@ a {
 }
 
 #main-title-text {
-    font-size: 10vh;
+    font-size: 8vh;
 }
 
 .title-desc>p {
-    font-size: 2rem;
+    font-size: 1.5em;
+    font-weight: 100;
 }
 
 .section-line {
@@ -113,30 +114,38 @@ a {
     padding-bottom: 2.5%;
 }
 
-/* @media (max-width: 767px) {
-    nav {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        place-items: center;
-        padding-top: 2.5%;
-        padding-left: 5%;
-        padding-right: 5%;
-        gap: 2rem;
-        font-size: 1.25rem;
-        width: 100%;
+li {
+    padding: .5%;
+    width: 80%;
+}
 
-        position: sticky;
-        top: 0;
-        z-index: 1000;
-    }
-} */
+.project-card {
+    padding: 1.5%;
+}
+
+.about-text {
+    width: 75%;
+    font-size: 2vh;
+    font-weight: 200;
+}
 
 @media (min-width: 768px) {
     .container {
         padding: 2rem;
-        width: 80%;
+        width: 90%;
     }
 
+    #main-title-text {
+        font-size: 10vh;
+    }
+
+    section {
+        padding: 2.5%;
+    }
+
+    nav {
+        text-align: center;
+    }
 
 }
 
@@ -157,4 +166,38 @@ a {
         gap: 10vh;
         font-size: 1.25rem;
     }
+
+    .bullets-container {
+        display: flex;
+        gap: 25%;
+    }
+
+    .about-text {
+        width: 75%;
+        font-size: 4vh;
+        font-weight: 200;
+    }
+
+    .section-title {
+        font-size: 6vh;
+    }
+
+    .project-title {
+        font-size: 4vh;
+    }
+
+    .tech-stack,
+    .project-links {
+        font-size: 3vh;
+    }
+
+    .project-links {
+        display: flex;
+        gap: 2.5%;
+    }
+
+    section {
+        min-height: 100vh;
+    }
+
 }
