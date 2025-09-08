@@ -129,6 +129,10 @@ li {
     font-weight: 200;
 }
 
+#odin-link:hover {
+    color: blue;
+}
+
 @media (min-width: 768px) {
     .container {
         padding: 2rem;
@@ -172,6 +176,10 @@ li {
         gap: 25%;
     }
 
+    #main-title-text {
+        font-size: 12vh;
+    }
+
     .about-text {
         width: 75%;
         font-size: 4vh;
@@ -182,7 +190,8 @@ li {
         font-size: 6vh;
     }
 
-    .project-title {
+    .project-title,
+    .list-title {
         font-size: 4vh;
     }
 
