@@ -5,33 +5,31 @@
 }
 
 body {
-    padding: 5%;
+    font-size: 1rem;
+}
+
+.container {
+    width: 100%;
+    padding: 1rem;
+}
+
+@media (min-width: 768px) {
+    .container {
+        padding: 2rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1200px;
+    }
 }
 
 main,
 header,
-section {
-    min-height: 800px;
-    max-width: 720px;
+section,
+li {
     text-wrap: pretty;
-}
-
-header {
-    min-height: 800px;
-}
-
-.title-container,
-#about-me,
-#self-taught,
-#skills,
-.project-card,
-#contact-me {
-    transition: background-color .4s ease-out, color .4s ease-out;
-}
-
-.title-container>h1 {
-    font-size: 144px;
-    margin-left: 2.5%;
 }
 
 .title-container:hover,
@@ -49,147 +47,11 @@ header {
     }
 }
 
-.title-desc>p {
-    font-size: 30px;
-    font-weight: 200;
-    margin-left: 2.5%;
-}
-
-.title-desc {
-    display: flex;
-    gap: 5%;
-}
-
-.nav-bar {
-    position: fixed;
-    right: 0;
-    padding-right: 5%;
-    display: flex;
-    flex-direction: column;
-    gap: 72px;
-}
-
-.nav-bar>a {
-    font-size: 36px;
-    text-transform: none;
-    text-decoration: none;
-    color: inherit;
-    transition: background-color .4s ease-in-out, color 0.4s ease-out, transform 0.4s ease-out;
-    width: 320px;
-    padding-left: 2.5%;
-}
-
-.nav-bar>a:hover {
-    transform: translateX(-20px);
-    color: white;
-    background-color: black;
-}
-
-.socials {
-    display: flex;
-    gap: 25%;
-    align-items: center;
-}
-
-.section-title {
-    font-size: 72px;
-    margin-left: 2.5%;
-    padding-top: 2.5%;
-}
-
-.section-line {
-    max-width: 720px;
-    border: 2px solid black;
-}
-
-.about-text {
-    margin-left: 2.5%;
-    max-width: 620px;
-    padding-bottom: 2.5%;
-    font-weight: 200;
-    font-size: 24px;
-    text-wrap: pretty;
-}
-
-.list-title {
-    font-size: 30px;
-}
-
-.bullets-container {
-    display: flex;
-    align-items: center;
-    gap: 15%;
-    padding-left: 2.5%;
-}
-
-.proficient-in,
-.familiar-with {
-    display: grid;
-    grid-template-rows: 100px 200px;
-}
-
-.project-title,
-.project-links>a {
-    padding-left: 2.5%;
-}
-
-.project-bullets>.about-text {
-    font-size: 18px;
-}
-
-.project-text>.project-title {
-    font-size: 24px;
-}
-
-.project-links>a {
-    text-decoration: none;
-    color: inherit;
-    font-size: 18px;
-}
-
-.project-card {
-    padding-top: 1.5%;
-    padding-bottom: 3.5%;
-}
-
-.project-container {
-    display: grid;
-    grid-template-rows: repeat(1fr, 4);
-
-}
-
-#projects {
-    min-height: auto;
-}
-
-.tech-stack {
-    padding-left: 2.5%;
-    font-weight: 300;
-}
-
-#contact-me>.socials {
-    gap: 2.5%;
-    padding-left: 2.5%;
-}
-
-@media (min-width: 899px) and (max-width: 1199px) {
-
-    main,
-    header,
-    section {
-        max-width: 480px;
-        width: 100%;
-    }
-
-    .nav-bar>a {
-        font-size: 36px;
-    }
-
-    .title-container>h1 {
-        font-size: 96px;
-    }
-
-    .nav-bar {
-        padding-right: 2.5%;
-    }
+.title-container,
+#about-me,
+#self-taught,
+#skills,
+.project-card,
+#contact-me {
+    transition: background-color .4s ease-out, color .4s ease-out;
 }
